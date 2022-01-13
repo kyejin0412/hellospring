@@ -1,9 +1,12 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
+//컨트롤러에서 외부요청을 받고, 서비스에서 비지니스 로직을 만들고, 레포지토리에서 디비 저장 -> 정형화된 패턴임
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
