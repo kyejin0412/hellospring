@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
+//컴포넌트 스캔 방법
 //이 컨트롤러 에노테이션을 보고 MemberController 객체 생성해서 스프링이 들고 관리함.
 public class MemberController {
 
